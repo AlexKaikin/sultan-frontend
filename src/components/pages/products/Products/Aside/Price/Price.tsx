@@ -7,11 +7,13 @@ import {
   setPriceToValue,
 } from '../../../../../../store/filter/filter'
 import { useAppDispatch } from '../../../../../../store/store'
+import { FilterStateType } from '../../../../../../@types/filter'
 
-function Price() {
+function Price(props: PropsType) {
+  const {filter} = props
   const dispatch = useAppDispatch()
-  const [priceFrom, setPriceFrom] = useState('')
-  const [priceTo, setPriceTo] = useState('')
+  const [priceFrom, setPriceFrom] = useState(filter.priceFrom)
+  const [priceTo, setPriceTo] = useState(filter.priceTo)
 
   const fromeSearchDebounce = useMemo(
     () =>
@@ -50,7 +52,7 @@ function Price() {
         <input
           onChange={priceFromChange}
           value={priceFrom}
-          type="text"
+          type="number"
           className="price__input"
           placeholder="0"
         />
@@ -58,7 +60,7 @@ function Price() {
         <input
           onChange={priceToChange}
           value={priceTo}
-          type="text"
+          type="number"
           className="price__input"
           placeholder="10000"
         />
@@ -68,3 +70,7 @@ function Price() {
 }
 
 export default Price
+
+type PropsType = {
+  filter: FilterStateType
+}

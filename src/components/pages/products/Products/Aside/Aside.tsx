@@ -25,8 +25,8 @@ function Aside(props: PropsType) {
           </div>
         </div>
         <div className={cn('filter__params', { show: filterShow })}>
-          <Price />
-          <Maker />
+          <Price filter={filter} />
+          <Maker filter={filter} />
           <SubCategory navigation={navigation} filter={filter} />
         </div>
       </div>
