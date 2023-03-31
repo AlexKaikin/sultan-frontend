@@ -1,0 +1,55 @@
+.skeleton.products__item {
+  .item__img {
+    height: 300px;
+    width: 100%;
+    background-color: var(--light);
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .item__size {
+    height: 16px;
+    width: 60px;
+    background-color: var(--light);
+    border-radius: 10px;
+  }
+  .item__title {
+    height: 60px;
+    width: 100%;
+    background-color: var(--light);
+    border-radius: 10px;
+  }
+  .item__property {
+    .item__code {
+      height: 20px;
+      width: 150px;
+      background-color: var(--light);
+      border-radius: 10px;
+    }
+    .item__maker {
+      height: 20px;
+      width: 200px;
+      background-color: var(--light);
+      border-radius: 10px;
+    }
+    .item__brand {
+      height: 20px;
+      width: 100px;
+      background-color: var(--light);
+      border-radius: 10px;
+    }
+  }
+  .item__bottom {
+    .item__price {
+      width: 30px;
+      height: 20px;
+      background-color: var(--light);
+      border-radius: 10px;
+    }
+    .item__btn {
+      width: 150px;
+      height: 50px;
+      background-color: var(--light);
+      border-radius: 80px;
+    }
+  }
+}

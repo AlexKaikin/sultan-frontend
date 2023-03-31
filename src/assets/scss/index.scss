@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import './_var';
+@import './_null';
+
+body {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.scrolloff {
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 320px;
+
+  .main {
+    flex: 1 1 auto;
+    margin-bottom: 100px;
+  }
+}
+
+.container {
+  max-width: 1410px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media only screen and (max-width: 1350px) {
+    padding: 0 15px;
+  }
+}
+
+.form {
+  .form__field {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    background: linear-gradient(141deg, var(--light) 0%, var(--white) 100%);
+
+    label {
+      position: absolute;
+      font-size: 13px;
+      top: 3px;
+      left: 10px;
+      opacity: 0.5;
+    }
+
+    input,
+    textarea {
+      padding: 30px 10px 10px 10px;
+      transition: all 0.5s ease 0s;
+      width: 100%;
+    }
+
+    textarea {
+      height: 150px;
+      margin-top: 30px;
+      padding: 0px 10px 10px 10px;
+    }
+  }
+
+  .form__select {
+    position: relative;
+    margin-bottom: 20px;
+
+    label {
+      position: absolute;
+      font-size: 13px;
+      top: 3px;
+      left: 10px;
+      opacity: 0.5;
+    }
+
+    select {
+      font-size: inherit;
+      padding: 30px 10px 14px 10px;
+      transition: all 0.5s ease 0s;
+      border-radius: 10px;
+      background-color: #f0f0f0;
+      background: linear-gradient(141deg, var(--light) 0%, var(--white) 100%);
+      
+      option{
+        color: black;
+      }
+    }
+  }
+
+  .form__checkbox {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    
+    label {
+      cursor: pointer;
+    }
+  }
+
+  .form__checks {
+    position: relative;
+    font-size: inherit;
+    padding: 30px 10px 14px 10px;
+    transition: all 0.5s ease 0s;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    background: linear-gradient(141deg, var(--light) 0%, var(--white) 100%);
+  
+    .title {
+      position: absolute;
+      font-size: 13px;
+      top: 3px;
+      left: 10px;
+      opacity: 0.5;
+    }
+  }
+
+  .form__btn {
+    background-color: var(--primary);
+    background: linear-gradient(
+      141deg,
+      var(--primaryDark) 0%,
+      var(--primary) 100%
+    );
+    border: 2px solid var(--bg-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease 0s;
+
+    &:hover {
+      background-color: var(--primary);
+      border: 2px solid var(--bg-color);
+      box-shadow: 0 0 0 3px var(--primary);
+    }
+  }
+}
+
+.btn {
+  padding: 15px 30px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 30px;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+
+  &.btn-light {
+    color: var(--text-color);
+    background: linear-gradient(141deg, var(--light) 0%, var(--white) 100%);
+  }
+
+  &.btn-warning {
+    color: white;
+    background-color: var(--primary);
+  }
+}

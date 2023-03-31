@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { Header, Main, Footer } from './components/layout/index'
+import { authMe } from './store/auth/auth'
+import { getNavigation } from './store/navigation/navigation'
+import { useAppDispatch } from './store/store'
 
 function App() {
+  const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    dispatch(getNavigation())
+    dispatch(authMe())
+  }, [dispatch])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Header />
+      <Main />
+      <Footer />
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

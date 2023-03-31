@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active,
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+header,
+footer,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  display: table;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea,
+select,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+}
+
+select {
+  option:checked,
+  option[selected],
+  option:hover,
+  option:focus,
+  option:active {
+    color: black;
+  }
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  line-height: normal;
+}
+
+img {
+  vertical-align: top;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+  line-height: normal;
+  margin: 20px 0;
+}
+
+::-webkit-scrollbar {
+  // width
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  // Track
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  // Handle
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  // Handle on hover
+  background: #555;
+}
+
+// ::selection {
+// background: black; /* Safari */
+// color: white;
+// }
+// ::-moz-selection {
+// background: black; /* Firefox */
+// color: white;
+// }

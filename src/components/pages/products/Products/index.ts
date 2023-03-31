@@ -1,0 +1,5 @@
+export { default as Aside } from './Aside/Aside'
+export { default as Categories } from './Categories/Categories'
+export { default as Lorem } from './Lorem/Lorem'
+export { default as ProductsItems } from './ProductsItems/ProductsItems'
+export { default as Sorting } from './Sorting/Sorting'

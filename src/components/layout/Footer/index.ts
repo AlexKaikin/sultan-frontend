@@ -1,0 +1,6 @@
+export { default as Category } from './Category/Category'
+export { default as Contacts } from './Contacts/Contacts'
+export { default as Logo } from './Logo/Logo'
+export { default as Nav } from './Nav/Nav'
+export { default as PriceList } from './PriceList/PriceList'
+export { default as Subscribe } from './Subscribe/Subscribe'
