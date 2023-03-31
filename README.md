@@ -23,8 +23,8 @@
     <li>Язык программирования: JavaScript</li>
     <li>Библиотеки: Nodejs, Express, mongoose, jsonwebtoken, bcrypt, cors, multer, aws-sdk</li>
     <li>БД: MongoDB</li>
-    <li>Ссылка на GitHub: <a href="#"></a></li>
+    <li>Ссылка на GitHub: <a href="https://github.com/AlexKaikin/sultan-backend">https://github.com/AlexKaikin/sultan-backend</a></li>
 </ul>
 
 <h3>DEMO</h3>
-<a href="#"></a>
+<a href="https://sultan-fawn.vercel.app/products">https://sultan-fawn.vercel.app/products</a>
