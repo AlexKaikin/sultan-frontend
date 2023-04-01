@@ -2,54 +2,111 @@
   .item__img {
     height: 300px;
     width: 100%;
-    background-color: var(--light);
+    background: rgb(210, 210, 210);
+    background: linear-gradient(
+      141deg,
+      rgba(210, 210, 210, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
     border-radius: 10px;
     margin-bottom: 10px;
+    animation: fade 1s linear infinite alternate;
   }
   .item__size {
     height: 16px;
     width: 60px;
-    background-color: var(--light);
+    background: rgb(210, 210, 210);
+    background: linear-gradient(
+      141deg,
+      rgba(210, 210, 210, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
     border-radius: 10px;
+    animation: fade 1s linear infinite alternate;
   }
   .item__title {
     height: 60px;
     width: 100%;
-    background-color: var(--light);
+    background: rgb(210, 210, 210);
+    background: linear-gradient(
+      141deg,
+      rgba(210, 210, 210, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
     border-radius: 10px;
+    animation: fade 1s linear infinite alternate;
   }
   .item__property {
     .item__code {
       height: 20px;
       width: 150px;
-      background-color: var(--light);
+      background: rgb(210, 210, 210);
+      background: linear-gradient(
+        141deg,
+        rgba(210, 210, 210, 1) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
       border-radius: 10px;
+      animation: fade 1s linear infinite alternate;
     }
     .item__maker {
       height: 20px;
       width: 200px;
-      background-color: var(--light);
+      background: rgb(210, 210, 210);
+      background: linear-gradient(
+        141deg,
+        rgba(210, 210, 210, 1) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
       border-radius: 10px;
+      animation: fade 1s linear infinite alternate;
     }
     .item__brand {
       height: 20px;
       width: 100px;
-      background-color: var(--light);
+      background: rgb(210, 210, 210);
+      background: linear-gradient(
+        141deg,
+        rgba(210, 210, 210, 1) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
       border-radius: 10px;
+      animation: fade 1s linear infinite alternate;
     }
   }
   .item__bottom {
     .item__price {
       width: 30px;
       height: 20px;
-      background-color: var(--light);
+      background: rgb(210, 210, 210);
+      background: linear-gradient(
+        141deg,
+        rgba(210, 210, 210, 1) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
       border-radius: 10px;
+      animation: fade 1s linear infinite alternate;
     }
     .item__btn {
       width: 150px;
       height: 50px;
-      background-color: var(--light);
+      background: rgb(210, 210, 210);
+      background: linear-gradient(
+        141deg,
+        rgba(210, 210, 210, 1) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
       border-radius: 80px;
+      animation: fade 1s linear infinite alternate;
     }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
