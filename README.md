@@ -13,11 +13,6 @@
     <li>Библиотеки: Reactjs, @reduxjs/toolkit, react-redux, react-router-dom, axios, formik, classnames, sass </li>
 </ul>
 
-<h3>Препроцессор</h3>
-<ul>
-    <li>SASS</li>
-</ul>
-
 <h3>Backend:</h3>
 <ul>
     <li>Язык программирования: JavaScript</li>

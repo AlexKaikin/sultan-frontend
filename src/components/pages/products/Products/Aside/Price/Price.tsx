@@ -51,7 +51,7 @@ function Price(props: PropsType) {
       <form action="" className="price__form">
         <input
           onChange={priceFromChange}
-          value={priceFrom}
+          value={priceFrom === 0 ? '' : priceFrom}
           type="number"
           className="price__input"
           placeholder="0"
@@ -59,7 +59,7 @@ function Price(props: PropsType) {
         <div>-</div>
         <input
           onChange={priceToChange}
-          value={priceTo}
+          value={priceTo === 0 ? '' : priceTo}
           type="number"
           className="price__input"
           placeholder="10000"
