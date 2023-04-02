@@ -5,7 +5,7 @@ import { RootState } from '../store'
 
 /**
  * загрузка товара
- * 
+ *
  * status: 'loading' | 'loading' | 'success' | 'error'
  */
 
@@ -32,7 +32,7 @@ export const product = createSlice({
  * Action
  */
 
-export const { setProduct, setStatus} = product.actions
+export const { setProduct, setStatus } = product.actions
 
 export default product.reducer
 

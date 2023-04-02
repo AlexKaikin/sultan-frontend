@@ -15,7 +15,7 @@ const initialState: FilterStateType = {
   maker: [],
 }
 
-export const products = createSlice({
+export const filter = createSlice({
   name: 'filter',
   initialState,
   reducers: {
@@ -58,9 +58,9 @@ export const {
   setCategoryActive,
   setSortActive,
   setMaker,
-} = products.actions
+} = filter.actions
 
-export default products.reducer
+export default filter.reducer
 
 /**
  * Selector

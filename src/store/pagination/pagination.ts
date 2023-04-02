@@ -27,8 +27,7 @@ export const pagination = createSlice({
  * Action
  */
 
-export const { setTotalItems, setCurrentPage } =
-pagination.actions
+export const { setTotalItems, setCurrentPage } = pagination.actions
 
 export default pagination.reducer
 
@@ -36,5 +35,4 @@ export default pagination.reducer
  * Selector
  */
 
-export const paginationSelector = (state: RootState) =>
-  state.pagination
+export const paginationSelector = (state: RootState) => state.pagination
